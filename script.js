@@ -94,6 +94,3 @@ window.addEventListener('scroll', animateOnScroll);
 window.addEventListener('load', animateOnScroll);
 
 
-// Chat Modal Functionality
-
-
