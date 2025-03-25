@@ -40,21 +40,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Modal Functionality
-function openModal(modalId) {
-    const modal = document.getElementById(modalId);
-    if (modal) {
-        modal.style.display = 'block';
-        document.body.style.overflow = 'hidden';
-    }
-}
 
-function closeModal(modalId) {
-    const modal = document.getElementById(modalId);
-    if (modal) {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
-}
 
 // Close modal when clicking outside
 window.addEventListener('click', (e) => {
@@ -109,21 +95,5 @@ window.addEventListener('load', animateOnScroll);
 
 
 // Chat Modal Functionality
-const chatBtn = document.querySelector('.sticky-cta a');
-const chatModal = document.getElementById('chatModal');
-const closeModal = document.querySelector('.close-modal');
-const chatForm = document.getElementById('chatForm');
 
-// Open modal
-chatBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  chatModal.style.display = 'block';
-  document.body.style.overflow = 'hidden';
-});
-
-// Close modal
-closeModal.addEventListener('click', () => {
-  chatModal.style.display = 'none';
-  document.body.style.overflow = 'auto';
-});
 
