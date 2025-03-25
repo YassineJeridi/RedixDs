@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redix Digital Solutions | Digital Marketing Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add this in the head section -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo"><img src="assets/redix logo.png" alt=""class="logo" srcset=""></a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#results">Results</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Grow Your Business with <span>Data-Driven</span> Marketing</h1>
+                <p>We help brands thrive online with tailored strategies that deliver measurable results.</p>
+                <div class="cta-buttons">
+                    <a  class="btn-primary" id="chat-button">Get Your Free Audit</a>
+                    <a href="#" class="btn-secondary">How We Work</a>
+                </div>
+            </div>
+        <!-- Replace the hero image div with this -->
+            <div class="hero-animation">
+                <lottie-player
+                    src="assets/Animations/digital marketing.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 100%; height: 100%"
+                    loop
+                    autoplay>
+                </lottie-player>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <p class="subtitle">A results-driven agency focused on your growth</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>ROI-Focused</h3>
+                    <p>We prioritize strategies that deliver the highest return on your investment.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Transparent Reporting</h3>
+                    <p>Real-time dashboards show exactly how your campaigns are performing.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>5+ Years Experience</h3>
+                    <p>Our team has helped hundreds of businesses achieve their goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p class="subtitle">Comprehensive digital marketing solutions tailored to your needs</p>
+            
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card" onclick="openModal('seo-modal')">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Improve your search rankings and organic traffic with our proven SEO strategies.</p>
+                    <div class="learn-more">Learn More <i class="fas fa-arrow-right"></i></div>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card" onclick="openModal('ppc-modal')">
+                    <div class="service-icon">
+                        <i class="fas fa-ad"></i>
+                    </div>
+                    <h3>Paid Advertising</h3>
+                    <p>Maximize conversions with targeted PPC and social media advertising campaigns.</p>
+                    <div class="learn-more">Learn More <i class="fas fa-arrow-right"></i></div>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card" onclick="openModal('content-modal')">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>Content Marketing</h3>
+                    <p>Engage your audience with high-quality, SEO-optimized content that converts.</p>
+                    <div class="learn-more">Learn More <i class="fas fa-arrow-right"></i></div>
+                </div>
+
+                <div class="service-card" onclick="openModal('social-modal')">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>Social Media Management</h3>
+                    <p>Build your brand presence and engage with your audience across social platforms.</p>
+                    <div class="learn-more">Learn More <i class="fas fa-arrow-right"></i></div>
+                </div>
+                
+                
+                <!-- Service Card 5 -->
+                <div class="service-card" onclick="openModal('web-modal')">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Design</h3>
+                    <p>Beautiful, high-converting websites designed for performance and user experience.</p>
+                    <div class="learn-more">Learn More <i class="fas fa-arrow-right"></i></div>
+                </div>
+                
+                <!-- Service Card 6 -->
+                <div class="service-card" onclick="openModal('email-modal')">
+                    <div class="service-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Marketing</h3>
+                    <p>Nurture leads and boost sales with automated, personalized email campaigns.</p>
+                    <div class="learn-more">Learn More <i class="fas fa-arrow-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Modals -->
+    <!-- SEO Modal -->
+    <div id="seo-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('seo-modal')">&times;</span>
+            <h3>SEO Optimization</h3>
+            <p>We help your website rank higher on Google:</p>
+            <ul>
+                <li>Keyword research to find what customers search for</li>
+                <li>On-page optimization (titles, content, and links)</li>
+                <li>Technical fixes for better Google crawling</li>
+                <li>Local SEO for nearby customers</li>
+                <li>Monthly ranking reports</li>
+            </ul>
+            <br>
+            <p>Most clients see 2-3x more website visitors within 6 months.</p>
+            <br>
+            <a href="#contact" class="btn-primary">Get Started</a>
+        </div>
+    </div>
+
+    <!-- PPC Modal -->
+    <div id="ppc-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('ppc-modal')">&times;</span>
+            <h3>Paid Advertising (PPC)</h3>
+            <p>We create ads that convert visitors to customers:</p>
+            <ul>
+                <li>Facebook & Instagram ads</li>
+                <li>LinkedIn ads for business services</li>
+                <li>Google Display Network ads</li>
+                <li>Ad testing for best performance</li>
+                <li>Weekly budget adjustments</li>
+            </ul>
+            <br>
+            <p>Average client earns $3.50 for every $1 spent on ads.</p>
+            <br>
+            <a href="#contact" class="btn-primary">Get Started</a>
+        </div>
+    </div>
+
+
+    <div id="social-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('ppc-modal')">&times;</span>
+            <h3>Social Media Management</h3>
+            <p>We build your brand on social platforms:</p>
+            <ul>
+                <li>Custom content calendar</li>
+                <li>Daily posts and stories</li>
+                <li>Engagement with your audience</li>
+                <li>Hashtag strategy</li>
+                <li>Monthly performance reports</li>
+            </ul>
+            <br>
+            <p>Typical growth: 30-50% more followers in 3 months.</p>
+            <br>
+            <a href="#contact" class="btn-primary">Get Started</a>
+        </div>
+    </div>
+
+
+    <div id="content-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('ppc-modal')">&times;</span>
+            <h3>Content Marketing</h3>
+            <p>Attract customers with valuable content:</p>
+            <ul>
+                <li>Blog posts that rank on Google</li>
+                <li>Helpful guides and how-tos</li>
+                <li>Video script writing</li>
+                <li>Social media content</li>
+                <li>Monthly content plans</li>
+            </ul>
+            <br>
+            <p>Content brings 3x more leads than traditional ads.</p>
+            <br>
+            <a href="#contact" class="btn-primary">Get Started</a>
+        </div>
+    </div>
+
+
+    <div id="web-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('ppc-modal')">&times;</span>
+            <h3>Web Design</h3>
+            <p>Beautiful websites that convert visitors:</p>
+            <ul>
+                <li>Mobile-friendly design</li>
+                <li>Fast loading speeds</li>
+                <li>Easy-to-use navigation</li>
+                <li>Contact forms and call buttons</li>
+                <li>SEO-ready structure</li>
+            </ul>
+            <br>
+            <p>Recent projects increased conversions by 40-60%.</p>
+            <br>
+            <a href="#contact" class="btn-primary">Get Started</a>
+        </div>
+    </div>
+
+
+    <div id="email-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('ppc-modal')">&times;</span>
+            <h3>Email Marketing</h3>
+            <p>Turn subscribers into customers:</p>
+            <ul>
+                <li>Professional email templates</li>
+                <li>Automated welcome sequences</li>
+                <li>Promotional campaigns</li>
+                <li>Subscriber list growth tools</li>
+                <li>Open/click rate tracking</li>
+            </ul>
+            <br>
+            <p>Average results: 20-30% open rates (industry avg: 15-20%).</p>
+            <br>
+            <a href="#contact" class="btn-primary">Get Started</a>
+        </div>
+    </div>
+
+    <!-- Results Section -->
+    <section id="results" class="results">
+        <div class="container">
+            <h2>Proven Results</h2>
+            <p class="subtitle">See what we've achieved for our clients</p>
+            
+            <div class="case-studies">
+                <div class="case-study">
+                    <div class="result-badge">+150%</div>
+                    <h3>Ecommerce Revenue Growth</h3>
+                    <p>For a fashion retailer in 6 months through targeted Facebook ads and email automation.</p>
+                </div>
+                
+                <div class="case-study">
+                    <div class="result-badge">3x</div>
+                    <h3>Return on Ad Spend</h3>
+                    <p>For a SaaS company through optimized Google Ads campaigns and landing pages.</p>
+                </div>
+                
+                <div class="case-study">
+                    <div class="result-badge">+200%</div>
+                    <h3>Lead Generation</h3>
+                    <p>For a B2B service provider through LinkedIn ads and content marketing.</p>
+                </div>
+            </div>
+            
+            <div class="cta-center cta-buttons" >
+   
+                <a href="#" class="btn-secondary">See More Case Studies</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <p class="subtitle">Don't just take our word for it</p>
+            
+            <div class="testimonial-track">
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote">"NexaGrowth transformed our online presence. Our website traffic tripled in just 4 months!"</div>
+                        <div class="client">
+                            <img src="assets/PDP.jpg" alt="Sarah Johnson">
+                            <div class="client-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>CEO, BrightStar Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote">"The team's PPC expertise helped us reduce customer acquisition costs by 40% while increasing conversions."</div>
+                        <div class="client">
+                            <img src="assets/PDP.jpg" alt="Michael Chen">
+                            <div class="client-info">
+                                <h4>Michael Chen</h4>
+                                <p>Marketing Director, TechFlow</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote">"Their content marketing strategy positioned us as industry leaders and brought in high-quality leads consistently."</div>
+                        <div class="client">
+                            <img src="assets/PDP.jpg" alt="Emily Rodriguez">
+                            <div class="client-info">
+                                <h4>Emily Rodriguez</h4>
+                                <p>Founder, GreenLife Organics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote">"The website they designed for us increased our conversion rate by 65%. Absolutely stunning work!"</div>
+                        <div class="client">
+                            <img src="assets/PDP.jpg" alt="David Kim">
+                            <div class="client-info">
+                                <h4>David Kim</h4>
+                                <p>Owner, UrbanBrew Coffee</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote">"The website they designed for us increased our conversion rate by 65%. Absolutely stunning work!"</div>
+                        <div class="client">
+                            <img src="assets/PDP.jpg" alt="David Kim">
+                            <div class="client-info">
+                                <h4>David Kim</h4>
+                                <p>Owner, UrbanBrew Coffee</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <div class="container">
+            <h2>Trusted By</h2>
+            <br>
+         
+            <div class="partner-logos">
+                <img src="assets/EFPHQ_Logo.png" alt="Partner logo">
+                <img src="assets/flayes logo.PNG" alt="Partner logo">
+                <img src="assets/frita logo.png" alt="Partner logo">
+                <img src="assets/IMC_LOGO.png" alt="Partner logo">
+                <img src="assets/Moatez  logo (2).png" alt="Partner logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta">
+        <div class="container">
+            <h2>Ready to Grow Your Business?</h2>
+            <p class="subtitle">Let's discuss your goals!</p>
+            
+            <div class="cta-buttons">
+                <a href="#" class="btn-primary">Get a Free Proposal</a>
+                <a href="#" class="btn-secondary">Book a Call</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="event-cards">
+        <div class="container">
+            <h2>Our Event Highlights</h2>
+            <p class="subtitle">Watch the after-movies from our recent events</p>
+            
+            <div class="event-grid">
+                <!-- ESENnet Job Fair -->
+                <div class="event-card">
+                    <div class="event-banner">
+                        <img src="assets/Affiche ESENet 24-25 VF.jpg" alt="ESENnet Logo" class="event-logo">
+                    </div>
+                    <div class="event-info">
+                        <h3>ESENnet Job Fair</h3>
+                        <p>Career networking event highlights • </p>
+                        <a href="https://www.facebook.com/share/v/1Rc7mAfrQ1/" class="watch-btn" target="_blank">
+                            <i class="fas fa-play"></i> Watch Video
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- AIECEC StartAct -->
+                <div class="event-card">
+                    <div class="event-banner">
+                        <img src="/assets/startact.png" alt="StartAct Logo" class="event-logo">
+                    </div>
+                    <div class="event-info">
+                        <h3>AIECEC StartAct</h3>
+                        <p>Entrepreneurship forum recap • </p>
+                        <a href="https://youtube.com/link2" class="watch-btn" target="_blank">
+                            <i class="fas fa-play"></i> Watch Video
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- JCI Freelancini -->
+                <div class="event-card">
+                    <div class="event-banner">
+                        <img src="assets/Copie de Purple Simple Illustrated Work from Home Jobs YouTube Thumbnail (1).png" alt="Freelancini Logo" class="event-logo">
+                    </div>
+                    <div class="event-info">
+                        <h3>JCI Freelancini</h3>
+                        <p>Future of work conference •</p>
+                        <a href="https://www.facebook.com/reel/1155653466230822" class="watch-btn" target="_blank">
+                            <i class="fas fa-play"></i> Watch Video
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>redix Digital Solution</h3>
+                    <p>Data-driven digital marketing solutions to help your business grow online.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#results">Case Studies</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">SEO</a></li>
+                        <li><a href="#">PPC Advertising</a></li>
+                        <li><a href="#">Social Media</a></li>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Email Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Marketing St, Digital City</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> hello@nexagrowth.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Redix Digital Solutions. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    
+<!-- Chat Button -->
+<button class="chat-button" id="chatButton" aria-label="Open chat form">
+    <span class="chat-icon">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M21 11.5C21.0034 12.8 20.695 14.1 20.1 15.3C19.4 16.7 18.3 17.9 17 18.7C15.6 19.6 14 20 12.5 20C11.2 20 9.9 19.7 8.7 19.1L3 21L4.9 15.3C4.3 14.1 4 12.8 4 11.5C4 9.9 4.4 8.4 5.3 7C6.1 5.7 7.3 4.6 8.7 3.9C9.9 3.3 11.2 3 12.5 3H13C15 3.1 17 4 18.5 5.5C20 7 20.9 9 21 11V11.5Z" 
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
+    <span class="chat-text">Chat with Us</span>
+    <span class="pulse-effect"></span>
+  </button>
+  
+  <!-- Chat Form -->
+  <div id="chatModal" class="chat-modal">
+    <div class="chat-welcome">
+        <div class="bot-avatar">
+          <svg viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" fill="var(--primary-color)"/>
+            <circle cx="8.5" cy="10" r="1.5" fill="white"/>
+            <circle cx="15.5" cy="10" r="1.5" fill="white"/>
+            <path d="M8 15C8 15 10 17 12 17C14 17 16 15 16 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="welcome-message">
+          <p>Hi there! Please fill this form and we'll get back to you shortly.</p>
+          <div class="typing-indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    <div class="chat-modal-content">
+      <div class="chat-header">
+        <h3>How can we help?</h3>
+        <button class="close-chat" aria-label="Close chat">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <form class="chat-form" id="chatForm">
+        <div class="form-group floating-input">
+          <input type="text" id="name" required>
+          <label for="name">Your Name</label>
+          <div class="underline"></div>
+        </div>
+        <div class="form-group floating-input">
+          <input type="email" id="email" required>
+          <label for="email">Your Email</label>
+          <div class="underline"></div>
+        </div>
+        <div class="form-group floating-input">
+          <input type="tel" id="phone">
+          <label for="phone">Phone (optional)</label>
+          <div class="underline"></div>
+        </div>
+        <div class="form-group floating-input">
+          <textarea id="message" required></textarea>
+          <label for="message">Your Message</label>
+          <div class="underline"></div>
+        </div>
+        <button type="submit" class="btn-send">
+          <span>Send Message</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+    <script src="chat.js"></script>
+</body>
+</body>
+</html>
